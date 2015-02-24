@@ -5,7 +5,7 @@ function model(X_train, y_train, X_test)
     local opt = {
         hiddenSize = {200, 200},
         activation = 'ReLU',
-        dropout = {0, 0.5},
+        dropoutProb = {0, 0.5},
         sparse_init = false,
         momentum = 0.8,
         learningRate = 0.1,
