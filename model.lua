@@ -13,7 +13,7 @@ function model(X_train, y_train, X_test)
         batchSize = 100,
         weight_decay_factor = 0.,
         cuda = false,
-        maxEpoch = 1
+        maxEpoch = 20
     }
     
     if torch.min(y_train) == 0 then
