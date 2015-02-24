@@ -44,8 +44,7 @@ train_obj = helpers.get_data_and_column_names(opt.train)
 test = csv2tensor.load(opt.test)
 
 targets, proba = model(train_obj.X, train_obj.y, test)
-print(targets:size())
-print(proba:size())
+
 targets = torch.Tensor.totable(targets)
 proba = torch.Tensor.totable(proba)
 
