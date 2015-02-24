@@ -47,7 +47,8 @@ targets, proba = model(train_obj.X, train_obj.y, test)
 
 targets = torch.Tensor.totable(targets)
 proba = torch.Tensor.totable(proba)
-
+print(targets:dim())
+print(proba:dim())
 for i, k in ipairs(targets) do
     targets[i] = {tostring(targets[i])}
 end
