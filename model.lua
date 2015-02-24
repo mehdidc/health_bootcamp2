@@ -11,9 +11,9 @@ function model(X_train, y_train, X_test)
         learningRate = 0.1,
 --      maxOutNorm = 1.,
         batchSize = 100,
-        weight_decay_factor = 0.,
+        weight_decay_factor = 0.001,
         cuda = false,
-        maxEpoch = 20
+        maxEpoch = 50
     }
     
     if torch.min(y_train) == 0 then
